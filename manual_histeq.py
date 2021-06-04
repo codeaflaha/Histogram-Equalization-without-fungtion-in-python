@@ -1,5 +1,5 @@
 import numpy as np
-import collections
+import math
 def frewkwensi(arr, n, m,luas,baris,kolom,matrix):
     print('input(matrix)')
     print(matrix)
@@ -16,27 +16,27 @@ def frewkwensi(arr, n, m,luas,baris,kolom,matrix):
         cp2[arr[i] - 1] += 1
         # Increase the index
         i += 1        
-    print('frewkwensi')
-    for i in range(m):         
-         print(hash[i])         
-    print('frewkwensi/luas(probalitas)')     
+#    print('frewkwensi')
+#    for i in range(m):         
+       #  print(hash[i])         
+#   print('frewkwensi/luas(probalitas)')     
     for i in range(m):        
-          probality[i]= hash[i]/luas
-          print(probality[i])
-    print('cumulative probability/CP')
+        probality[i]= hash[i]/luas
+        #  print(probality[i])
+#    print('cumulative probability/CP')
     sum=0     
     for element in probality:
         sum+=element
-        print(sum)        
-    print('cumulative probability*20')
+    #    print(sum)        
+    #print('cumulative probability*20')
     sum=0
     for i in range(m):
         sum+=probality[i]
         cp2[i]= sum*20
-        print(cp2[i])
-        print('digenapkan')
-        cp2[i]= round(cp2[i],0)
-        print(cp2[i])
+    #    print(cp2[i])
+    #    print('digenapkan')
+        cp2[i]= math.floor(cp2[i])
+    #    print(cp2[i])
     print('Output')
     k=(baris,kolom)
     output=np.zeros(k)
@@ -54,16 +54,16 @@ matrix = np.array([[ 3, 2, 4, 5],
            [5, 4, 6, 7,]])
 
 daftar =np.array(matrix).flatten().tolist()
-print('input(array/list)')
-print(daftar)
+#print('input(array/list)')
+#print(daftar)
 total= max(daftar)
 kolom, baris = matrix.shape
-print('kolom')
-print(kolom)
-print('baris')
-print(baris)
+#print('kolom')
+#print(kolom)
+#print('baris')
+#print(baris)
 luas = baris * kolom
-print('luas(baris*kolom)')
-print(luas) 
+#print('luas(baris*kolom)')
+#print(luas) 
 frewkwensi(daftar, len(daftar), total,luas,baris,kolom,matrix)
 # This code is contributed by avanitrachhadiya2155
