@@ -1,0 +1,1 @@
+# Histogram-Equalization-without-fungtion-in-python
