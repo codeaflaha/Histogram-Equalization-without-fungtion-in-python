@@ -2,7 +2,7 @@
 
 code from explanation video below <br>
 
-<img src="https://img.youtube.com/vi/eNBZI-qYhpg/maxresdefault.jpg" widht=400 height=500>
+<img src="https://img.youtube.com/vi/eNBZI-qYhpg/maxresdefault.jpg" widht=200 height=150>
 
 
 
